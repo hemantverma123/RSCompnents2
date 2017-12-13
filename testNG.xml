@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="FirstTestSuite">
+
+	<listeners>
+		<!-- <listener class-name="com.test.automation.uiAutomation.customListner.Listener"></listener> -->
+		<!-- <listener class-name="com.test.automation.uiAutomation.customListner.RetryListener"></listener> -->
+	</listeners>
+
+	<test name="CreateApplicant">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<!-- <class name="com.test.automation.uiAutomation.addToCart.TC001_VerifyAddToBasket_AutomationPractices"></class> -->
+			<class name="cs.test.admissions.TC005_MyNott_UK_AllApplicants"></class>
+
+		</classes>
+	</test>
+</suite>

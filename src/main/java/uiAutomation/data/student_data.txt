@@ -1,0 +1,59 @@
+InsertDate :29-11-2017:04-57-14
+one UG y 20060473 INTUK - International India U1252 U6UMAAPMM
+two UG y 20060474 INTUK - International India U1252 U6UMAAPMM
+three UG y 20060475 INTUK - International India U1252 U6UMAAPMM
+four UG y 20060476 INTUK - International India U1252 U6UMAAPMM
+five UG y 20060477 INTUK - International India U1252 U6UMAAPMM
+six UG y 20060478 EUUK - EU Country Canada U2306 U5UENGRG 
+seven UG y 20060479 EUUK - EU Country Canada U2306 U5UENGRG 
+eight UG y 20060480 EUUK - EU Country Canada U2306 U5UENGRG 
+nine UG y 20060481 EUUK - EU Country Canada U2306 U5UENGRG 
+ten UG y 20060482 EUUK - EU Country Canada U2306 U5UENGRG 
+eleven UG y 20060483 HOMUK - GBR  Viet Nam U1264 U6UMEDCNP1
+twelve UG y 20060484 HOMUK - GBR  Viet Nam U1264 U6UMEDCNP1
+thirteen UG y 20060485 HOMUK - GBR  Viet Nam U1264 U6UMEDCNP1
+fourteen UG y 20060486 HOMUK - GBR  Viet Nam U1264 U6UMEDCNP1
+fifteen UG y 20060487 HOMUK - GBR  Viet Nam U1264 U6UMEDCNP1
+sixteen UG y 20060488 UKFSA - Swiss National Iraq U1257 U7UMCENGY1
+seventeen UG y 20060489 UKFSA - Swiss National Iraq U1257 U7UMCENGY1
+eighteen UG y 20060490 UKFSA - Swiss National Iraq U1257 U7UMCENGY1
+nineteen UG y 20060491 UKFSA - Swiss National Iraq U1257 U7UMCENGY1
+twenty UG y 20060492 UKFSA - Swiss National Iraq U1257 U7UMCENGY1
+InsertDate :29-11-2017:05-27-54
+InsertDate :29-11-2017:05-30-24
+InsertDate :29-11-2017:05-33-01
+twenty one PGR y 20060738 null null null null
+InsertDate :29-11-2017:05-36-12
+twenty one PGR y 20060738 INTUK - International  United States U1695 U7PMEDABL
+InsertDate :29-11-2017:05-38-31
+twenty one PGR y 20060738 INTUK - International  United States U1695 U7PMEDABL
+InsertDate :29-11-2017:05-40-37
+twenty two PGR y 20060740 INTUK - International  United States U1695 U7PMEDABL
+InsertDate :29-11-2017:05-48-03
+InsertDate :29-11-2017:06-03-24
+InsertDate :29-11-2017:06-07-12
+twenty two PGR y 20060740 INTUK - International  United States U1695 U7PMEDABL
+InsertDate :29-11-2017:06-10-35
+twenty one PGR y 20060738 INTUK - International  United States U1695 U7PMEDABL
+twenty two PGR y 20060740 INTUK - International  United States U1695 U7PMEDABL
+InsertDate :29-11-2017:06-14-30
+twenty three PGR y 20060742 INTUK - International  United States U1695 U7PMEDABL
+twenty four PGR y 20060744 INTUK - International  United States U1695 U7PMEDABL
+twenty five PGR y 20060746 INTUK - International  United States U1695 U7PMEDABL
+sixty five PGR y 20060812 INTUK - International  Afghanistan U1446 U7PLFESCL2
+sixty six PGR y 20060813 INTUK - International  Afghanistan U1446 U7PLFESCL2
+sixty seven PGR y 20060814 INTUK - International  Afghanistan U1446 U7PLFESCL2
+sixty eight PGR y 20060815 INTUK - International  Afghanistan U1446 U7PLFESCL2
+sixty nine PGR y 20060817 INTUK - International  Afghanistan U1446 U7PLFESCL2
+seventy one PGT y 20060857 INTUK - International  Iraq U1996 U8PPOSTGN3
+InsertDate :29-11-2017:06-21-00
+seventy one PGT y 20060857 INTUK - International  Iraq U1996 U8PPOSTGN3
+InsertDate :06-12-2017:05-06-43
+InsertDate :06-12-2017:05-10-44
+InsertDate :07-12-2017:01-38-05
+InsertDate :12-12-2017:01-46-12
+InsertDate :12-12-2017:04-01-08
+InsertDate :12-12-2017:04-02-28
+20041383, 10126843, Fern59, Password1!, United States, LLL, {"message":[{"id":0,"sex":"Male","entry":"Direct","visa":"Required","currency":"CNY","payment":true,"conviction":true,"fulltime":true,"campus":"UK","type":"UG","firstname":"Rigoberto","middlename":"Homenick","lastname":"Ankunding","username":"Fern59","dob":"1957-11-19T22:12:02.916Z","dobtxt":"19/11/57","dobDDMMYYYY":"19/11/1957","email":"Zackary.Crist5@gmail.com","password":"zUUELyqoIKfaNv7#","street":"34667 Abbott Extensions","city":"Claudeshire","county":"Dyfed","country":"Cyprus","postcode":"GJ59 9GJ","phone":"03571987904","createdAt":1513094556484,"updatedAt":1513094556484}]}
+20041384, 10126844, Dock_Lueilwitz, Password1!, France, LLL, {"message":[{"id":0,"sex":"Male","entry":"Direct","visa":"Not Required","currency":"CNY","payment":false,"conviction":true,"fulltime":false,"campus":"UK","type":"UG","firstname":"Claudine","middlename":"Mann","lastname":"Hettinger","username":"Dock_Lueilwitz","dob":"1974-07-30T11:24:42.948Z","dobtxt":"30/07/74","dobDDMMYYYY":"30/07/1974","email":"Dillan65@yahoo.com","password":"aiCXfQQpnnvTpqA!","street":"004 Kelly Manors","city":"Aracelyview","county":"Surrey","country":"El Salvador","postcode":"OH12 4IJ","phone":"0106036352","createdAt":1513094725247,"updatedAt":1513094725247}]}
+20041385, 10126845, Ludwig.Durgan, Password1!, United Kingdom, LLL, {"message":[{"id":0,"sex":"Female","entry":"Direct","visa":"Required","currency":"GBP","payment":true,"conviction":true,"fulltime":false,"campus":"UK","type":"UG","firstname":"Thora","middlename":"Schowalter","lastname":"Johns","username":"Ludwig.Durgan","dob":"1962-09-25T08:31:35.769Z","dobtxt":"25/09/62","dobDDMMYYYY":"25/09/1962","email":"Janae.Bernier@yahoo.com","password":"YkP_07SFFbfWx_U*","street":"089 Dickinson Ridges","city":"South Isaiahtown","county":"County Down","country":"Benin","postcode":"CH53 7UD","phone":"01195149330","createdAt":1513094818038,"updatedAt":1513094818038}]}

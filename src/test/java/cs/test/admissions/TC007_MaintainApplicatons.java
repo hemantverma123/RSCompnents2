@@ -31,7 +31,7 @@ import uiAutomation.uiActions.MyNottingham.MyNottingham_Login;
 public class TC007_MaintainApplicatons extends TestBase{
 	
 	public static final Logger log = Logger.getLogger(TC007_MaintainApplicatons.class.getName());	
-//added one comment
+
 	//FrameWork Parameters
 	String excelname, sheetname, msg;
 	int data_row=1;

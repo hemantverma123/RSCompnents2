@@ -12,9 +12,7 @@ Given initial setup completed
 And get the url from config file
 
 Scenario: User buys as Guest
-Given initial setup completed
-And get the url from config file
-And user clicks on Home button 
+Given user clicks on Home button 
 And user selects New Products
 And user selects product "Solder Paste" to buy
 And user selects product category "Solder Pastes" 

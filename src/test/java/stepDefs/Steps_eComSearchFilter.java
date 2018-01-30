@@ -1,12 +1,9 @@
 package stepDefs;
 
-import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 import org.apache.log4j.Logger;
-import org.junit.Assert;
-import org.junit.BeforeClass;
 
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
@@ -14,7 +11,6 @@ import cucumber.api.java.Before;
 import cucumber.api.java8.En;
 import framework.MongoInterface;
 import framework.TestBase;
-import framework.envspecific.CountryData;
 import framework.envspecific.TestManager;
 import framework.envspecific.UonCountries;
 import framework.envspecific.UonCountryEnvironments;
@@ -23,21 +19,20 @@ import rs.ecom.pages.BasketSummaryPage;
 import rs.ecom.pages.HomePage;
 import rs.ecom.pages.LoginPage;
 import rs.ecom.pages.ProductPage;
+import rs.ecom.pages.SearchResultPage;
 
 //import cucumber.api.PendingException;
 
-public class Steps_eComE2E1 extends TestBase implements En {
+public class Steps_eComSearchFilter extends TestBase implements En {
 
-	public static final Logger log = Logger.getLogger(Steps_eComE2E1.class.getName());	
+	public static final Logger log = Logger.getLogger(Steps_eComSearchFilter.class.getName());	
 
 	MongoInterface mi;
 	HomePage homepage;
 	LoginPage loginpage;
 	ProductPage prodpage;
 	BasketSummaryPage basket;
-	Steps_eComCommon commonSteps;
-	
-	CountryData cd;
+	SearchResultPage srp;
 	
 	Calendar calendar = Calendar.getInstance();
 	SimpleDateFormat formater = new SimpleDateFormat("dd-MM-yyyy:hh-mm-ss");
@@ -48,33 +43,29 @@ public class Steps_eComE2E1 extends TestBase implements En {
 	String countryCode = UonCountries.UNITED_KINGDOM.countryCode();
 	String excelname, sheetname;
 	int data_row=1;
-	
-@BeforeClass
-public void setup() throws IOException{
-// will be used if test runs from junit framework	
-}
+
 
 @Before
-public void BeforeScenario(Scenario s) throws IOException {
-	System.out.println("Should execute before scenario : " + s.getName());
+public void BeforeScenario(Scenario s) {
+	System.out.println("Should execute before the scenario : " + s.getName());
 	log.info("Executing scenario - " + s.getName());
 }
 	
-@SuppressWarnings("deprecation")
-public Steps_eComE2E1() {
 
-	Given("^initial setup completed$", () -> {
-	    System.out.println("inside the initial setup");
+public Steps_eComSearchFilter() {
+
+	Given("^initial setup completed for SearchFilter$", () -> {
+	    System.out.println("inside the initial setup for search filter");
 
 		init();
 		mi = new MongoInterface("students");
-		cd = new CountryData();
-
+		
 		//commonSteps = new Steps_eComCommon(driver);
 		homepage = new HomePage(driver);
 		prodpage = new ProductPage(driver);
 		basket = new BasketSummaryPage(driver);
-
+		srp = new SearchResultPage(driver);
+		
 		//Assuming that test url is deployed in PUAT env
 		UonCountryEnvironments.setEnv(UonTestEnviroments.PUAT.toString()); 
 		//UonCountryEnvironments.setEnv(UonTestEnviroments.UATB.toString());
@@ -89,68 +80,32 @@ public Steps_eComE2E1() {
 
 	});
 
-	Given("^get the url from config file$", () -> {
-	    // will cover config file input here
-
-	});
-
-	Given("^user clicks on Home button$", () -> {
+	Given("^user clicks on Home button for search$", () -> {
 	    homepage.clickHomeBtn();
 
 	});
 	
-	Given("^user selects New Products$", () -> {
-	 
-		homepage.clickNewProductsMenu();
+	When("^user search \"([^\"]*)\"$", (String product) -> {
+		homepage.searchProduct(product);
 	});
 
-	Given("^user selects product \"([^\"]*)\" to buy$", (String product) -> {
-		prodpage.selectproduct(product);
-
+	When("^user clicks search button$", () -> {
+	   homepage.ClickSearch();
 	});
 
-	Given("^user selects product category \"([^\"]*)\"$", (String prodcat) -> {
-		prodpage.selectproductcat(prodcat);
-	    
-	});
-	
-	Given("^user adds selected product to the basket$", () -> {
-		prodpage.addToBasket();
-
+	//Then("^user should see (.*)$", (String result) -> {
+	Then("^user should see \"([^\"]*)\"$", (String result) -> {
+		srp.verifysearch(result);
 	});
 
-	Given("^user click basket button$", () -> {
-	    prodpage.clickbasket();
-
-	});
-
-	Then("^\"([^\"]*)\" page is displayed with the product \"([^\"]*)\"$", (String title, String selectedProduct) -> {
-	    basket.verifyPageTitle(title);
-	    basket.verifyProdOnBasketPage(selectedProduct);
-
-	});
-
-	And("^user login with user \"([^\"]*)\" and password \"([^\"]*)\"$", (String userid, String pwd) -> {
-		homepage.ApplicantLogin(userid, pwd);
-		    
-	});
-
-	Then("^verify login success$", () ->{
-		String logintext = homepage.verifyLogin();
-		Assert.assertEquals(logintext, "Log Out");
-	});
-	
-	Then("^take the screenshot as \"([^\"]*)\"$", (String name) -> {
-		getScreenShot(name);
-	});
-
-	System.out.println("End of E2E step class");
+	System.out.println("End of search filter step class");
 }
+
 
 	@After
 	public void afterScenario() {
 		System.out.println("inside after scenario hookup");
-		log.info("=========== Finished E2E Test=============");
+		log.info("=========== Finished Create UK Applicants Test=============");
 	}
 
 }
